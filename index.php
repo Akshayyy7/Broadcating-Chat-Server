@@ -2,25 +2,44 @@
 <html>
 <head>
 	<title>WebChat</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+	body{
+
+	background-color : #4682B4;
+
+
+}
+
+.hi {
+
+	
+	padding : 20px;
+	background-color : #e0ffff;
+	margin-top: 50px;
+    
+}
+
+input[type=text]{
+	width:250px;
+
+	
+	
+}
+</style>
 </head>
 <body>
-<div id="main" >
+<div class="hi" >
 	
-	<div id="info">
-		<h2> login here</h2>
+		<h2> Login here </h2>
 		<form action="login.php" method="post">
 			<label><b>Username</b></label>
 			<input type="text" name="uname" placeholder="Username"><br><br>
 			<label><b>Password</b></label>
 			<input type="text" name="pass" placeholder="Password"><br><br>
 			<button style="background-color: #6495ed; color: white;" type="submit">
-				<b>login</b>
+				<b>Login</b>
 			</button>
 
-			<button style="background-color: #6495ed; color: white;" type="submit">
-				<b>report</b>
-			</button>
 			
 
 		</form>
@@ -33,12 +52,22 @@
 			<label>Password:</label>
 			<input type="text" name="Password" placeholder="Password"><br><br>
 			<button style="background-color: #6495ed; color: white;" type="submit">
-				<b>signup</b>
+				<b>Signup</b>
 			</button>
 
 		</form>
 
-	</div>
+		<form action="report.php" method="post">
+			<h2>Report Option</h2>
+			<label>Username:</label>
+			<input type="text" name="uname" placeholder="Username"><br><br>
+			
+			<button style="background-color: #6495ed; color: white;" type="submit">
+				<b>Report</b>
+			</button>
+
+		</form>
+
 
 
 </div>	
